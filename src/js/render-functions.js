@@ -8,7 +8,7 @@ const galleryList = document.querySelector('.gallery'),
   loadMoreBtn = document.querySelector('.load-more-btn');
 
 let gallery = new SimpleLightbox('.gallery a', {
-  captions: true,
+  captions: false,
   captionsData: 'alt',
   captionDelay: 250,
 });
@@ -29,7 +29,7 @@ export function createGallery(images) {
 <a href="${largeImageURL}">
 <img src="${webformatURL}" alt="${tags}" width="360" height="152">
 </a>
-<ul class="image-info-list">
+<ul class="image-info-list visually-hidden">
 <li class="image-info-item">Likes
 <p>${likes}</p>
 </li>
@@ -71,4 +71,12 @@ export function hideLoadMoreButton() {
 
 export function hideLoader() {
   loader.classList.remove('load');
+}
+
+export function addPadding() {
+  galleryList.classList.add('gallery-active');
+}
+
+export function removePadding() {
+  galleryList.classList.remove('gallery-active');
 }

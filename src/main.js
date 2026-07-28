@@ -11,6 +11,8 @@ import {
   hideLoader,
   showLoadMoreButton,
   hideLoadMoreButton,
+  removePadding,
+  addPadding,
 } from './js/render-functions';
 
 const form = document.querySelector('form'),
@@ -31,6 +33,7 @@ async function handleSubmit(e) {
     page = 1;
 
     hideLoadMoreButton();
+    removePadding();
     clearGallery();
 
     query = input.value.trim();
@@ -44,6 +47,7 @@ async function handleSubmit(e) {
     const response = await getImagesByQuery(query, page);
 
     if (response.totalHits <= perPage) {
+      addPadding();
       createGallery(response.hits);
       hideLoadMoreButton();
       hideLoader();
@@ -51,6 +55,7 @@ async function handleSubmit(e) {
       page = 1;
     } else if (!response.hits.length) {
       hideLoadMoreButton();
+      removePadding();
       hideLoader();
       showToast(
         'Sorry, there are no images matching your search query. Please, try again!'
@@ -58,12 +63,14 @@ async function handleSubmit(e) {
       return;
     } else {
       hideLoader();
+      addPadding();
       createGallery(response.hits);
       showLoadMoreButton();
       page += 1;
     }
   } catch (error) {
     hideLoadMoreButton();
+    removePadding();
     hideLoader();
     showToast(
       'Sorry, there are no images matching your search query. Please, try again!'
