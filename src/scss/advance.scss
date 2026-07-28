@@ -5,9 +5,17 @@
 .advance-wrapper {
   display: flex;
   justify-content: end;
+  background-image: image-set(
+    url('../img/webp/advanced.webp') 1x,
+    url('../img/webp/advancedRet.webp') 2x
+  );
+  background-position: 530px -75px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .advance-title {
+  padding-top: 10px;
   font-weight: 700;
   font-size: 90px;
   line-height: 0.9;
