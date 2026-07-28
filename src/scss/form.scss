@@ -1,49 +1,73 @@
+.hero {
+  padding: 0 0 50px 0;
+}
+
+.hero-wrapper {
+  border-radius: 0 0 40px 40px;
+  padding: 75px 20px 150px 20px;
+  background-image: image-set(
+    url('../img/webp/heroBg.webp') 1x,
+    url('../img/webp/heroBgRet.webp') 2x
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  visibility: hidden;
+  display: none;
+}
+
 form {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 32px;
+  position: relative;
 }
 
 input[name='search-text'] {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #808080;
-  border-radius: 4px;
-  width: 272px;
-  padding: 8px 16px;
-  border: 1px solid #808080;
+  border-radius: 17px;
+  width: 600px;
+  padding: 10px 20px;
+  border: none;
   outline: none;
-  transition: border 0.3s ease;
+  transition: border 0.5s ease;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 2.4;
+  letter-spacing: -0.03em;
+  color: #7d7d81;
 }
 
 input[name='search-text']:hover,
 input[name='search-text']:focus {
-  border: 1px solid #000;
+  box-shadow: rgb(183, 0, 219);
 }
 
 input[name='search-text']:active {
-  border: 1px solid #4e75ff;
 }
 
 button {
-  border-radius: 8px;
-  padding: 8px 16px;
-  background: #4e75ff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
+  transition: all 0.3s ease;
+  background-color: transparent;
   border: none;
-  transition: background 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 button:hover,
 button:focus {
-  background: #6c8cff;
+  transform: rotate(75deg);
 }
 
 .gallery {

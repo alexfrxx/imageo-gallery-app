@@ -1,0 +1,62 @@
+.reasons {
+  padding: 50px 0 75px 0;
+}
+.reason-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  .reason-item {
+    &:nth-child(1) {
+      width: 40%;
+      padding: 50px 20px 50px 20px;
+      background: #f5f5f7;
+      border-radius: 50px;
+      display: flex;
+      justify-content: end;
+      .reason-title {
+        font-weight: 600;
+      }
+    }
+    &:nth-child(2) {
+      width: 50%;
+      background: #f5f5f7;
+      border-radius: 35px;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      color: #fff;
+      padding: 20px 30px;
+      background-image: image-set(
+        url('../img/webp/sea.webp') 1x,
+        url('../img/webp/seaRetina.webp') 2x
+      );
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      .reason-title {
+        font-weight: 700;
+      }
+    }
+
+    .reason-title {
+      line-height: 1.08;
+      font-size: 90px;
+      letter-spacing: -0.04em;
+      text-align: right;
+      max-width: 500px;
+    }
+    .reason-gradient {
+      background: linear-gradient(
+        70.94deg,
+        #001aff 43.43%,
+        #8b2a93 70.66%,
+        #ff3838 93.48%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
