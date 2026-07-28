@@ -1,0 +1,25 @@
+.advance {
+  padding: 25px 0 75px 0;
+}
+
+.advance-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.advance-title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  text-align: right;
+  color: #fff;
+  max-width: 700px;
+}
+
+.advance-gradient {
+  background: linear-gradient(90deg, #e129ff 43.92%, #29e6eb 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
