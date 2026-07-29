@@ -57,7 +57,7 @@ input[name='search-text']:focus {
 input[name='search-text']:active {
 }
 
-button {
+button[type='submit'] {
   transition: all 0.3s ease;
   background-color: transparent;
   border: none;
@@ -66,8 +66,8 @@ button {
   top: 20px;
 }
 
-button:hover,
-button:focus {
+button[type='submit']:hover,
+button[type='submit']:focus {
   transform: rotate(75deg);
 }
 
