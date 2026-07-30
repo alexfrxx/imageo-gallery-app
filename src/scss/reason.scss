@@ -88,3 +88,24 @@
     }
   }
 }
+
+@media (max-width: 430px) {
+  .reason-list {
+    flex-direction: column;
+    align-items: center;
+    .reason-item {
+      &:nth-child(1) {
+        width: 80%;
+        .reason-title {
+          font-size: 55px;
+        }
+      }
+      &:nth-child(2) {
+        width: 80%;
+        .reason-title {
+          font-size: 55px;
+        }
+      }
+    }
+  }
+}

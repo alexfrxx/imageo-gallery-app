@@ -71,5 +71,8 @@
 @media (max-width: 768px) {
   .copyright {
     flex-direction: column;
+    .copyright-subtitle {
+      text-align: center;
+    }
   }
 }
