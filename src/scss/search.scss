@@ -3,6 +3,7 @@
 }
 
 .search-title {
+  padding-left: 75px;
   font-weight: 700;
   font-size: 60px;
   line-height: 0.9;
@@ -22,7 +23,7 @@
 }
 
 .searcher {
-  margin: 35px 60px 0 60px;
+  margin: 35px 75px 0 75px;
   background-color: #066bdc;
   padding: 15px 30px;
   border-radius: 15px;
@@ -41,8 +42,11 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .search-wrapper {
+@media (max-width: 768px) {
+  .searcher {
+    margin: 35px 0 0 0;
+  }
+  .search-title {
     padding: 0;
   }
 }

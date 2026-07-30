@@ -28,7 +28,6 @@ h1 {
 form {
   display: flex;
   justify-content: center;
-  gap: 8px;
   margin-bottom: 32px;
   position: relative;
 }
@@ -52,9 +51,6 @@ input[name='search-text'] {
 input[name='search-text']:hover,
 input[name='search-text']:focus {
   box-shadow: rgb(183, 0, 219);
-}
-
-input[name='search-text']:active {
 }
 
 button[type='submit'] {
@@ -156,4 +152,20 @@ button[type='submit']:focus {
 
 .active {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    gap: 50px;
+    padding: 75px 20px 100px 20px;
+  }
+
+  input[name='search-text'] {
+    width: fit-content;
+  }
+
+  .svg-title {
+    width: 100%;
+    height: 50px;
+  }
 }
