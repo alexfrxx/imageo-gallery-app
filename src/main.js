@@ -20,7 +20,7 @@ const form = document.querySelector('form'),
   loadMoreBtn = document.querySelector('.load-more-btn');
 
 let page = 1;
-let perPage = 50;
+let perPage = 24;
 let query;
 
 form.addEventListener('submit', handleSubmit);

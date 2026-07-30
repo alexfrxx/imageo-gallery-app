@@ -11,7 +11,7 @@
 }
 
 .search-wrapper {
-  padding: 0 120px;
+  width: 100%;
 }
 
 .blue {
@@ -22,8 +22,7 @@
 }
 
 .searcher {
-  margin-top: 35px;
-  width: 100%;
+  margin: 35px 60px 0 60px;
   background-color: #066bdc;
   padding: 15px 30px;
   border-radius: 15px;
@@ -39,5 +38,11 @@
     line-height: 1.44;
     letter-spacing: -0.03em;
     color: #fff;
+  }
+}
+
+@media (max-width: 1200px) {
+  .search-wrapper {
+    padding: 0;
   }
 }

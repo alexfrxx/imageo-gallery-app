@@ -31,3 +31,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media (max-width: 768px) {
+  .advance {
+    padding: 0 0 40px 0;
+  }
+
+  .advance-title {
+    font-size: 65px;
+  }
+}

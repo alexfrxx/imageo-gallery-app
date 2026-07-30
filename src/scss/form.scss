@@ -134,11 +134,24 @@ button[type='submit']:focus {
 .load-btn-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
 }
 
 .load-more-btn {
   display: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #000;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  transition: background-color 0.4s ease;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
+  background-color: rgb(16, 114, 139);
+  border: 1px solid white;
 }
 
 .active {

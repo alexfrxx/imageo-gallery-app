@@ -6,6 +6,7 @@
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   align-items: flex-start;
 }
 
@@ -57,5 +58,18 @@
     font-size: 16px;
     letter-spacing: -0.04em;
     color: #c9c9c9;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    flex-direction: column;
   }
 }
