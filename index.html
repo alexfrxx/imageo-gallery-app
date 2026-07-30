@@ -4,40 +4,285 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Imageo</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-CucEYOFD.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-C7Pp9FbP.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-DkP0U1Dv.css">
   </head>
   <body>
     <header class="header"></header>
 
     <main>
-      <section>
-        <form class="form">
-          <label>
-            <input
-              type="text"
-              name="search-text"
-              placeholder="Search images..."
-              required
-            />
-          </label>
-          <button type="submit">Search</button>
-        </form>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <h1 class="visually-hidden">Free images</h1>
 
-        <ul class="gallery"></ul>
+            <svg class="svg-title" width="650" height="200">
+              <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#text"></use>
+            </svg>
 
-        <div class="load-btn-wrapper">
-          <button type="button" class="load-more-btn">Load more</button>
+            <form class="form">
+              <label>
+                <input
+                  type="text"
+                  name="search-text"
+                  placeholder="Search"
+                  required
+                />
+              </label>
+              <button type="submit">
+                <svg width="25" height="25">
+                  <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <ul class="gallery"></ul>
+
+          <div class="load-btn-wrapper">
+            <button type="button" class="load-more-btn">Load more</button>
+          </div>
         </div>
       </section>
 
-      <span class="loader"></span>
+      <section class="reasons">
+        <div class="container">
+          <ul class="reason-list">
+            <li class="reason-item">
+              <h2 class="reason-title">
+                Free high <span class="reason-gradient">Quality</span> images
+                and photos.
+              </h2>
+            </li>
+            <li class="reason-item">
+              <h2 class="reason-title">High Resolution</h2>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container">
+          <h2 class="category-title">Many categories.</h2>
+
+          <ul class="category-list">
+            <li class="category-item">
+              <img
+                src="/goit-js-hw-12/assets/category1-BtueTqiv.webp"
+                alt="Category of image"
+                width="250"
+              />
+            </li>
+            <li class="category-item">
+              <img
+                src="/goit-js-hw-12/assets/category2-BEBPyViR.webp"
+                alt="Category of image"
+                width="280"
+              />
+            </li>
+            <li class="category-item">
+              <img
+                src="/goit-js-hw-12/assets/category3-Do7E19U7.webp"
+                alt="Category of image"
+                width="310"
+              />
+            </li>
+            <li class="category-item">
+              <img
+                src="/goit-js-hw-12/assets/category4-B-a2-lI1.webp"
+                alt="Category of image"
+                width="340"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="search">
+        <div class="container">
+          <div class="search-wrapper">
+            <h2 class="search-title">
+              Easy to <span class="blue">search</span>
+            </h2>
+            <div class="searcher">
+              <p>Search</p>
+              <svg width="30" height="30">
+                <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#white-searcher"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advance">
+        <div class="container">
+          <div class="advance-wrapper">
+            <h2 class="advance-title">
+              Uses <span class="advance-gradient">advanced</span> algotithms and
+              the latest search engines.
+            </h2>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-info-list">
+            <div>
+              <h3 class="footer-info-title">Content.</h3>
+              <ul class="footer-item-list">
+                <li>
+                  <a href="#" class="footer-link" target="_blank"
+                    >Calendar of festivities</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-link" target="_blank">New assets</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link" target="_blank"
+                    >The most popular content</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-link" target="_blank"
+                    >Search trends</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-link" target="_blank">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer-info-title">Support.</h3>
+              <ul class="footer-item-list">
+                <li>
+                  <a href="#" class="footer-link" target="_blank">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link" target="_blank"
+                    >Search guide</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-link" target="_blank">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="footer-info-title">Information.</h3>
+            <ul class="footer-item-list">
+              <li>
+                <a href="#" class="footer-link" target="_blank">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank">About us</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank">Press room</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank">API</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank">Jobs</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank">Sell content</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank"
+                  >Freepik brand guidelines</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-info-title">Legal.</h3>
+            <ul class="footer-item-list">
+              <li>
+                <a href="#" class="footer-link" target="_blank">Teams of use</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank"
+                  >License agreement</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank"
+                  >Privacy policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank"
+                  >Copyright information</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank"
+                  >Cookies policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-link" target="_blank"
+                  >Cookies settings</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-info-title social-media-title">Social media.</h3>
+            <ul class="social-media-list">
+              <li>
+                <a href="#">
+                  <svg width="40" height="40">
+                    <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="40" height="40">
+                    <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="40" height="40">
+                    <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg width="40" height="40">
+                    <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <svg width="200" height="30">
+            <use href="/goit-js-hw-12/assets/sprite-CjqJ2BOo.svg#text"></use>
+          </svg>
 
+          <p class="copyright-subtitle">
+            Copyright&copy;2026 Imageo. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <span class="loader"></span>
   </body>
 </html>
