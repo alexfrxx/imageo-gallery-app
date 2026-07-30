@@ -141,17 +141,30 @@ button[type='submit']:focus {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
-  transition: background-color 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .load-more-btn:hover,
 .load-more-btn:focus {
-  background-color: rgb(16, 114, 139);
+  background-color: orange;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.load-more-btn:active {
   border: 1px solid white;
+  background-color: #000;
+  color: #fff;
 }
 
 .active {
   display: block;
+}
+
+@media (max-width: 1200px) {
+  .gallery-item {
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -167,5 +180,14 @@ button[type='submit']:focus {
   .svg-title {
     width: 100%;
     height: 50px;
+  }
+
+  .gallery-item img {
+    height: 150px;
+  }
+
+  .load-more-btn {
+    font-size: 18px;
+    padding: 10px 20px;
   }
 }

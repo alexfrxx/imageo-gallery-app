@@ -45,8 +45,32 @@
   gap: 10px;
 }
 
+.scroll-up-btn-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.scroll-up {
+  border-radius: 10px;
+  padding: 15px 22px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+
+.scroll-up:hover,
+.scroll-up:focus {
+  background-color: orange;
+  border: 2px solid #000;
+}
+
+.scroll-up:active {
+  background-color: #000;
+  border: 2px solid #fff;
+}
+
 .copyright {
-  margin-top: 70px;
+  margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #fff;
   display: flex;

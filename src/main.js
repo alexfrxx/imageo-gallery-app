@@ -14,10 +14,12 @@ import {
   removePadding,
   addPadding,
 } from './js/render-functions';
+import { scrollToUp } from './js/scrollUp';
 
 const form = document.querySelector('form'),
   input = document.querySelector('input[type="text"]'),
-  loadMoreBtn = document.querySelector('.load-more-btn');
+  loadMoreBtn = document.querySelector('.load-more-btn'),
+  scrollToUpBtn = document.querySelector('.scroll-up');
 
 let page = 1;
 let perPage = 24;
@@ -25,6 +27,7 @@ let query;
 
 form.addEventListener('submit', handleSubmit);
 loadMoreBtn.addEventListener('click', handleClick);
+scrollToUpBtn.addEventListener('click', scrollToUp);
 
 async function handleSubmit(e) {
   try {
