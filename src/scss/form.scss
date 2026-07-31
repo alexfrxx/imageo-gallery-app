@@ -162,8 +162,11 @@ button[type='submit']:focus {
 }
 
 @media (max-width: 1200px) {
+  .gallery {
+    gap: 5px;
+  }
   .gallery-item {
-    width: 45%;
+    width: 48%;
   }
 }
 
@@ -183,7 +186,7 @@ button[type='submit']:focus {
   }
 
   .gallery-item img {
-    height: 150px;
+    height: 200px;
   }
 
   .load-more-btn {
