@@ -86,7 +86,8 @@ imageo-gallery-app/
 ## 📸 Screenshots
 
 ```md
-![Home Page](./screenshots/home.png)
+<img width="599" height="584" alt="Снимок экрана 2026-08-01 в 16 45 29" src="https://github.com/user-attachments/assets/fd9314e5-d642-49a8-8796-89dc4feba78b" />
+
 ```
 
 ---
